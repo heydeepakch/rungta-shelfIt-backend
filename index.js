@@ -18,13 +18,11 @@ const seedCategories = async () => {
     }
 
     const categoriesToSeed = [
-        { name: 'Textbooks', icon: '📚', description: 'Find your course textbooks.' },
+        { name: 'TextBooks', icon: '📚', description: 'Find your course textbooks.' },
         { name: 'Electronics', icon: '💻', description: 'Laptops, phones, and more.' },
-        { name: 'Furniture', icon: '🛋️', description: 'Desks, chairs, and dorm essentials.' },
-        { name: 'Clothing', icon: '👕', description: 'Apparel for every style.' },
-        { name: 'Bikes & Scooters', icon: '🚲', description: 'Get around campus easily.' },
         { name: 'Supplies', icon: '✏️', description: 'Notebooks, pens, and other school supplies.' },
-        { name: 'Other', icon: '📦', description: 'Miscellaneous items.' }
+        { name: 'Dental Items', icon: '🦷', description: 'Dental equipment and supplies.' },
+        { name: 'Others', icon: '📦', description: 'Miscellaneous items.' }
     ];
 
     await Category.insertMany(categoriesToSeed);
